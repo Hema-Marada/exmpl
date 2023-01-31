@@ -1,0 +1,14 @@
+
+<form  [formGroup]="loginForm" (click)="loginUser()">
+    <label>FirstName</label>&nbsp;
+    <input type="text" name="text" formControlName="fname"><br><br>
+    <label>LastName</label>&nbsp;
+    <input type="text" name="text1"  formControlName="lname" ><br><br>
+     
+    <label>Gender</label>&nbsp;
+    <input type="radio" value="Male" formControlName="gender">&nbsp;Male
+    
+    <input type="radio" value="Female"   formControlName="gender">&nbsp;Female<br><br>
+    <input type="Submit" value ="submit" > 
+
+</form>

@@ -1,0 +1,6 @@
+<h2>ngIf Example</h2>
+<h3 *ngFor="let n of names; let i=index">
+    <ng-container *ngIf="i%2==0 && n.includes('a')">
+        <h2 [ngStyle]="{'background-color':'pink','color':'purple'}">{{n}}</h2></ng-container>
+    
+</h3>

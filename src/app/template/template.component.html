@@ -1,0 +1,15 @@
+
+<form #loginForm="ngForm" (click)="loginUser(loginForm.value)">
+    <label>FirstName</label>&nbsp;
+    <input type="text" name="text" [(ngModel)]="fname" ><br><br>
+    <label>LastName</label>&nbsp;
+    <input type="text" name="text1"  [(ngModel)]="lname" ><br><br>
+     
+    <label>Gender</label>&nbsp;
+    <input type="radio" value="Male" >&nbsp;Male
+    
+    <input type="radio" value="Female"   >&nbsp;Female<br><br>
+    <button (click)="onSubmit()">Submit</button> 
+
+</form>
+<!-- <router-outlet></router-outlet> -->
